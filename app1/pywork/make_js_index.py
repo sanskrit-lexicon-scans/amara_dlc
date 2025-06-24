@@ -147,8 +147,7 @@ Note the first line (column names) is ignored
    'v1':int(self.fromv), 'v2':int(self.tov),
    #'x1':self.fromvx,
    #'x2':self.tovx,
-   'vp':self.vpstr,
-   'ipage':self.ipage
+   'vp':self.vpstr
   }
   return e
 
@@ -295,6 +294,21 @@ def unused_check1(pagerecs):
  check1_key(pagerecs)
  check1_hierarchy(pagerecs)
 
+def check_nextpage(pagerecs):
+ prev = None
+ nprob = 0
+ for irec,rec in enumerate(pagerecs):
+  if irec == 0:
+   pass
+  elif (rec.tov == prev.tov) and (prev.ipage < rec.ipage):
+   nprob = nprob + 1
+   print('%s check_nextpage problem at line %s' %(nprob,irec+1))
+   print('prev: ',prev.line)
+   print(' cur: ',rec.line)
+   print()
+  prev = rec
+ print('check_nextpage finds %s problems' % nprob)
+ 
 if __name__ == "__main__":
  filein=sys.argv[1]  # tab-delimited index file
  fileout = sys.argv[2]
@@ -307,5 +321,5 @@ if __name__ == "__main__":
  filebcs = 'bcs.txt'
  write_bcsdict(filebcs,bcsdict)
  #check1_hierarchy(pagerecs)
- 
+ check_nextpage(pagerecs)
  
