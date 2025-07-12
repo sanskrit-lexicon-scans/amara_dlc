@@ -1,5 +1,5 @@
 
-# Deslongchamps 1839 edition of Amarakosha
+## Deslongchamps 1839 edition of Amarakosha
 
 Ref: https://github.com/sanskrit-lexicon/PWG/issues/62
 
@@ -12,11 +12,13 @@ PDF title: Amarasiṃha: Amarakocha ou vocabulaire d'Amarasinha, vol. 1, 1839
            publié en sanscrit avec une trad. française, des notes et un index par M. Loiseleur Deslongchamps
 
 ## app1
-    app1 provides access to pages based on (book, chapter, section, verse)
+Provides access to pages based on (book, chapter, section, verse)
 
 https://sanskrit-lexicon-scans.github.io/amara_dlc/app1/?N,N,N,N
 
-Example: https://sanskrit-lexicon-scans.github.io/amara_dlc/?app1/1,2,3,4
+Example: https://sanskrit-lexicon-scans.github.io/amara_dlc/app1/?1,2,3,4
 
 Access is also available with 3 parameters (book, chapter, verse), in
 accord with the references in Böhtlingk and Roth Grosses Petersburger Wörterbuch
+
+Example: https://sanskrit-lexicon-scans.github.io/amara_dlc/app1/?2,1,6
