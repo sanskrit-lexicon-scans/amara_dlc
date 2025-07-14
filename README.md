@@ -14,11 +14,11 @@ PDF title: Amarasiṃha: Amarakocha ou vocabulaire d'Amarasinha, vol. 1, 1839
 ## app1
 Provides access to pages based on (book, chapter, section, verse)
 
-https://sanskrit-lexicon-scans.github.io/amara_dlc/app1/?N,N,N,N
-
 Example: https://sanskrit-lexicon-scans.github.io/amara_dlc/app1/?1,2,3,4
 
-Access is also available with 3 parameters (book, chapter, verse), in
-accord with the references in Böhtlingk and Roth Grosses Petersburger Wörterbuch
+[bcs.txt](https://github.com/sanskrit-lexicon-scans/amara_dlc/blob/main/app1/pywork/bcs.txt) shows all the possibilities.
 
-Example: https://sanskrit-lexicon-scans.github.io/amara_dlc/app1/?2,1,6
+Note that 14 lines have 0 for section number. For these, app1 accepts either 4 numbers or 3 numbers (book, chapter, verse). 
+- https://sanskrit-lexicon-scans.github.io/amara_dlc/app1/?2,5,0,1
+- https://sanskrit-lexicon-scans.github.io/amara_dlc/app1/?2,5,1
+
